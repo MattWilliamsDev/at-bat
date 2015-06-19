@@ -32,3 +32,13 @@
 .table th.sortable {
   cursor: pointer;
 }
+
+.player-number,
+.player-name,
+.player-points {
+  font-size: 16px;
+}
+
+.player-number {}
+.player-name {}
+.player-points {}
