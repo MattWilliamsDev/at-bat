@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app/bower_components/bootstrap/dist/css/bootstrap.css">
+    <style>
+        [ng-cloak] {
+            display: none;
+        }
+    </style>
+    <script src="app/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <title>Bulls Quality AB Tracker</title>
+  <link rel="stylesheet" href="app/app.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="col-sm-12 view-container">
+      <h1>
+        Quality AB Tracker<br>
+        <small>2015 Indiana Bulls</small>
+      </h1>
+
+      <div ng-view></div>
+      
+    </div>
+  </div>
+
+  <script src="app/bower_components/angular/angular.js"></script>
+  <script src="app/bower_components/angular-route/angular-route.js"></script>
+  <script src="app/bower_components/underscore/underscore.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/services.js"></script>
+  <script src="app/controllers.js"></script>
+  <script src="app/views/tracker.js"></script>
+  <script src="app/components/version/version.js"></script>
+  <script src="app/components/version/version-directive.js"></script>
+  <script src="app/components/version/interpolate-filter.js"></script>
+  <script>
+    // when all is done, execute bootstrap angular application
+    angular.bootstrap( document, [ 'QualityABTracker' ]);
+  </script>
+</body>
+</html>
