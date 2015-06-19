@@ -6,11 +6,11 @@ angular.module( 'QualityABTracker.tracker', [ 'ngRoute', 'QualityABTracker.contr
 	$routeProvider
 
 	.when( '/tracker', {
-		templateUrl: 'templates/tracker.html'
+		templateUrl: '/app/templates/tracker.html'
 		, controller: 'trackerCtrl'
 	})
 	.when( '/tracker/:player', {
-		templateUrl: 'templates/tracker.html'
+		templateUrl: '/app/templates/tracker.html'
 		, controller: 'trackerCtrl'
 	})
 }]);
