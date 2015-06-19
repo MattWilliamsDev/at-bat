@@ -16,18 +16,18 @@
 					<td class="player-points">{{ player.points }}</td>
 					<td>
 						<div class="row">
-							<div class="col-md-3">
+							<!-- <div class="col-md-3"> -->
 								<button class="btn btn-large btn-primary" ng-click="addPoints( 1, player )">1 Point</button>
-							</div>
-							<div class="col-md-3">
+							<!-- </div> -->
+							<!-- <div class="col-md-3"> -->
 								<button class="btn btn-large btn-primary" ng-click="addPoints( 2, player )">2 Points</button>
-							</div>
-							<div class="col-md-3">
+							<!-- </div> -->
+							<!-- <div class="col-md-3"> -->
 								<button class="btn btn-large btn-primary" ng-click="addPoints( 5, player )">5 Points</button>
-							</div>
-							<div class="col-md-3">
+							<!-- </div> -->
+							<!-- <div class="col-md-3"> -->
 								<button class="btn btn-block btn-danger" ng-click="resetPoints( player )">Reset</button>
-							</div>
+							<!-- </div> -->
 						</div>
 					</td>
 				</tr>
@@ -40,9 +40,9 @@
 					<td ng-bind="totalPoints()"></td>
 					<td>
 						<div class="row">
-							<div class="col-md-3 pull-right">
-								<button class="btn btn-block btn-danger" ng-click="resetAllPoints()">Reset All</button>
-							</div>
+							<!-- <div class="col-md-3 pull-right"> -->
+								<button class="btn btn-large btn-danger" ng-click="resetAllPoints()">Reset All</button>
+							<!-- </div> -->
 						</div>
 					</td>
 				</tr>
