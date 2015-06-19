@@ -33,10 +33,26 @@
   cursor: pointer;
 }
 
-.player-number,
-.player-name,
-.player-points {
-  font-size: 24px;
+
+.players-list tr td {
+  font-size: 20px;
+}
+.players-list tbody > tr > td.player-number,
+.players-list tbody > tr > td.player-name,
+.players-list tbody > tr > td.player-points {
+  vertical-align: middle;
+}
+
+.players-list tr td .row {
+  font-size: 16px;
+}
+
+.scoring {
+  max-width: 250px;
+}
+
+.total-points {
+  font-weight: bold;
 }
 
 .player-number {}
