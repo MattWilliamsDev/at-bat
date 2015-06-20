@@ -4,7 +4,7 @@ angular.module( 'QualityABTracker.tracker', [ 'ngRoute', 'QualityABTracker.contr
 
 .config([ '$routeProvider', function( $routeProvider ) {
 	$routeProvider.when( '/tracker', {
-		templateUrl: '/app/templates/tracker.html?' + new Date().getTime()
+		templateUrl: '/app/templates/player-list.html?' + new Date().getTime()
 		, controller: 'trackerCtrl'
 	})
 }]);
