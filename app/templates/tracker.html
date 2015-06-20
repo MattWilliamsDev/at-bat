@@ -27,21 +27,36 @@
 					
 					<td class="scoring">
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-6">
 								<div class="btn-group btn-group-justified" role="group">
 									<div class="btn-group" role="group">
-										<button class="btn btn-default" ng-click="addPoints( 1, player )">
+										<button class="btn btn-success" ng-click="addPoints( 1, player )">
 											1 Point
 										</button>
 									</div>
 									<div class="btn-group" role="group">
-										<button class="btn btn-primary" ng-click="addPoints( 2, player )">
+										<button class="btn btn-success" ng-click="addPoints( 2, player )">
 											2 Points
 										</button>
 									</div>
 									<div class="btn-group" role="group">
 										<button class="btn btn-success" ng-click="addPoints( 5, player )">
 											5 Points
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="btn-group btn-group-justified" role="group">
+									<div class="btn-group" role="group">
+										<button class="btn btn-primary" ng-click="removePoints( 1, player )">
+											 -1 Point
+										</button>
+									</div>
+									<div class="btn-group" role="group">
+										<button class="btn btn-primary" ng-click="removePoints( 2, player )">
+											-2 Points
 										</button>
 									</div>
 								</div>

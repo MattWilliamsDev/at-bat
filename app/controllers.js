@@ -117,6 +117,11 @@ angular.module( 'QualityABTracker.controllers', [] )
 		$scope.save();
 	};
 
+	$scope.removePoints = function( number, player  ) {
+		player.points -= number;
+		$scope.save();
+	};
+
 	$scope.resetPoints = function( player ) {
 		player.points = 0;
 		$scope.save();
