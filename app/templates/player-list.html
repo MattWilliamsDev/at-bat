@@ -1,0 +1,96 @@
+<div class="row">
+	<div class="col-md-12 players-list">
+		<table class="table table-striped table-responsive">
+			<thead>
+				<tr>
+					<th class="text-center sortable" ng-click="sort( 'number' )">#</th>
+					<th class="sortable" ng-click="sort( 'lastName' )">Name</th>
+					<th class="text-center sortable" ng-click="sort( 'points' )">Points</th>
+					<th class="scoring">Scoring</th>
+					<th>Reset</th>
+				</tr>
+			</thead>
+				
+			<tbody>
+				<tr ng-repeat="player in players" id="player-{{ player.id }}">
+					<td class="text-center player-number">
+						{{ player.number }}
+					</td>
+					
+					<td class="player-name">
+						{{ player.lastName }}, {{ player.firstName }}
+					</td>
+					
+					<td class="text-center player-points">
+						{{ player.points }}
+					</td>
+					
+					<td class="scoring">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="btn-group btn-group-justified" role="group">
+									<div class="btn-group" role="group">
+										<button class="btn btn-success" ng-click="addPoints( 1, player )">
+											1 Point
+										</button>
+									</div>
+									<div class="btn-group" role="group">
+										<button class="btn btn-success" ng-click="addPoints( 2, player )">
+											2 Points
+										</button>
+									</div>
+									<div class="btn-group" role="group">
+										<button class="btn btn-success" ng-click="addPoints( 5, player )">
+											5 Points
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6">
+								<div class="btn-group btn-group-justified" role="group">
+									<div class="btn-group" role="group">
+										<button class="btn btn-primary" ng-click="removePoints( 1, player )">
+											 -1 Point
+										</button>
+									</div>
+									<div class="btn-group" role="group">
+										<button class="btn btn-primary" ng-click="removePoints( 2, player )">
+											-2 Points
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</td>
+
+					<td class="reset-player">
+						<div class="row">
+							<div class="col-md-12">
+								<button class="btn btn-block btn-danger" ng-click="resetPoints( player )">Reset</button>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+				
+			<tfoot>
+				<tr>
+					<td colspan="2" class="text-right">
+						<strong>Total</strong>
+					</td>
+					<td ng-bind="totalPoints()" class="text-center total-points"></td>
+					<td colspan="2">
+						<div class="row">
+							<div class="col-md-3 col-md-offset-9">
+								<button class="btn btn-block btn-danger" ng-click="resetAllPoints()">
+									Reset All
+								</button>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</div>
